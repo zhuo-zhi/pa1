@@ -80,7 +80,7 @@ export function traverseExpr(c : TreeCursor, s : string) : Expr {
           op = BinOp.Mul;
           break;
         default:
-          throw new Error("Parse error: unknow binary operator");
+          throw new Error("PARSE ERROR: unknow binary operator");
       }
       c.nextSibling();
       const right = traverseExpr(c, s);

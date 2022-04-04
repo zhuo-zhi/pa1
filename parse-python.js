@@ -1,6 +1,6 @@
 const python = require('lezer-python');
 
-const input = "globals()";
+const input = "max(1, 2, 3)";
 
 const tree = python.parser.parse(input);
 
